@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["Cinzel", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,26 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        blueprint: {
+          grid: "hsl(var(--blueprint-grid))",
+          line: "hsl(var(--blueprint-line))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--primary))",
+          glow: "hsl(var(--gold-glow))",
+          dim: "hsl(var(--gold-dim))",
+        },
+        facet: {
+          1: "hsl(var(--facet-1))",
+          2: "hsl(var(--facet-2))",
+          3: "hsl(var(--facet-3))",
+          4: "hsl(var(--facet-4))",
+          5: "hsl(var(--facet-5))",
+          6: "hsl(var(--facet-6))",
+          7: "hsl(var(--facet-7))",
+          8: "hsl(var(--facet-8))",
+          9: "hsl(var(--facet-9))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +89,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
