@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { GeometricBackground } from "@/components/GeometricBackground";
+import { Navigation } from "@/components/Navigation";
+import { HeroSection } from "@/components/HeroSection";
+import { CodexSection } from "@/components/CodexSection";
+import { CovenantSection } from "@/components/CovenantSection";
+import { DiamondSection } from "@/components/DiamondSection";
+import { WorthSection } from "@/components/WorthSection";
+import { SynthocracySection } from "@/components/SynthocracySection";
+import { AkadiaSection } from "@/components/AkadiaSection";
+import { DevelopersSection } from "@/components/DevelopersSection";
+import { AboutSection } from "@/components/AboutSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <GeometricBackground />
+      <Navigation />
+      <main>
+        <HeroSection />
+        <CodexSection />
+        <CovenantSection />
+        <DiamondSection />
+        <WorthSection />
+        <SynthocracySection />
+        <AkadiaSection />
+        <DevelopersSection />
+        <AboutSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
